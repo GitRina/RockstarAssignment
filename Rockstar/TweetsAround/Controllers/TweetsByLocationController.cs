@@ -23,13 +23,5 @@ namespace TweetsAround.Controllers
         {
             return await DalService.GetProximateTweets(radius, new GeoPoint(centerPointLong, centerPointLat));
         }
-
-        public IEnumerable<string> Get(int radius)
-        {
-            
-            return new string[] { "value1", "value2" };
-        }
-
-
     }
 }

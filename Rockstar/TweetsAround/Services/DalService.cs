@@ -13,13 +13,14 @@ namespace TweetsAround.Services
 {
     public static class DalService
     {
-
         public static async Task<List<TweetInfo>> GetProximateTweets(int radius, GeoPoint centerPoint)
         {
             List<TweetInfo> result = new List<TweetInfo>();
             using (SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Rockstar"].ConnectionString))
             {
+                if(connection.State != ConnectionState.Open)
                 connection.Open();
+
                 using (SqlCommand command = new SqlCommand("GetProximateTweets", connection))
                 {
                     #region creating sql cmd & parameters
@@ -33,6 +34,7 @@ namespace TweetsAround.Services
                     {
                         using (SqlDataReader reader = await command.ExecuteReaderAsync())
                         {
+                            // Getting tweets & adding to result
                             while (await reader.ReadAsync())
                             {
                                 string text = reader[0].ToString();

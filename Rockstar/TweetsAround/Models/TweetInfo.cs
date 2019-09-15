@@ -7,6 +7,7 @@ namespace TweetsAround.Models
 {
     public class TweetInfo
     {
+        #region ctor
         public TweetInfo(string content, GeoPoint location)
         {
             this.Content = content;
@@ -18,8 +19,11 @@ namespace TweetsAround.Models
             this.Content = content;
             this.Location = new GeoPoint(locationLong, locationLat);
         }
+        #endregion
 
+        #region properties
         public string Content { get; set; }
-        public GeoPoint Location { get; set; }
+        public GeoPoint Location { get; set; } 
+        #endregion
     }
 }

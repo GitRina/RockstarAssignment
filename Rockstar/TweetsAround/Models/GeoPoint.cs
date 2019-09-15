@@ -7,6 +7,7 @@ namespace TweetsAround.Models
 {
     public class GeoPoint
     {
+        #region ctor
         public GeoPoint(float longitude, float latitude)
         {
             this.Long = longitude;
@@ -15,13 +16,16 @@ namespace TweetsAround.Models
 
         public GeoPoint(string wkt)
         {
-            string cleanPoint = wkt.Replace("POINT (", "");
-            cleanPoint = cleanPoint.Replace(")", "");
-            this.Lat = float.Parse(cleanPoint.Split(' ')[0]);
-            this.Long = float.Parse(cleanPoint.Split(' ')[1]);
+            string rawPoint = wkt.Replace("POINT (", "");
+            rawPoint = rawPoint.Replace(")", "");
+            this.Lat = float.Parse(rawPoint.Split(' ')[0]);
+            this.Long = float.Parse(rawPoint.Split(' ')[1]);
         }
+        #endregion
 
+        #region properties
         public float Long { get; set; }
-        public float Lat { get; set; }
+        public float Lat { get; set; } 
+        #endregion
     }
 }

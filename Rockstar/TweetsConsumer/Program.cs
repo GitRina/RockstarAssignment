@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tweetinvi;
 using Tweetinvi.Models;
+using System.Configuration;
 
 namespace TweetsConsumer
 {
@@ -37,18 +38,14 @@ namespace TweetsConsumer
             ServicePointManager.SecurityProtocol = Tls12;
             #endregion
             #region credentials
-            ITwitterCredentials creds = new TwitterCredentials("8U2nwD6jnojKX0xwzq6XF96MF",
-                                        "GN7Pdsn4vK6HeF33ijXXEPo8aKCM7Ypr3KWJBQ1hIVY0TCKNoY",
-                                        "877762566-6uaNa9SJO9VIz8yZ8OFTJvfhcLZE15wiEFaw8bBx",
-                                        "zibRcYUY6vAZUxDQKEKJiccjjwFQx4GRlgXcwGLmEzmlU");
-            #endregion
-
+            ITwitterCredentials creds = new TwitterCredentials(ConfigurationManager.AppSettings["consumerKey"],
+                                                               ConfigurationManager.AppSettings["consumerSecretKey"],
+                                                               ConfigurationManager.AppSettings["accessToken"],
+                                                               ConfigurationManager.AppSettings["accessTokenSecret"]);
             Auth.SetCredentials(creds);
-            var user = Tweetinvi.User.GetAuthenticatedUser();
-
+            #endregion
+            
             var stream = Stream.CreateSampleStream();
-            Debugger.Log(0, "tweet", "Here's a twitter stream for you");
-
             connection.Open();
             stream.TweetReceived += (sender, arguments) =>
             {
@@ -56,20 +53,18 @@ namespace TweetsConsumer
                 try
                 {
                     float coordLong, coordLat;
-
                     if (((dynamic)JsonSerializer.ConvertJsonTo<object>(arguments.Json)).coordinates != null)
                     {
                         var coords = ((dynamic)JsonSerializer.ConvertJsonTo<object>(arguments.Json)).coordinates.coordinates;
                         coordLong = coords[0];
                         coordLat = coords[1];
-                        
                         StoreTweet(arguments.Tweet.Text, coordLong, coordLat);
                     }
                 }
                 catch (Exception ex)
                 {
                     connection.Close();
-                    throw ex;
+                    Debugger.Log(0, "streamStopped", ex.Message + "\n" + ex.StackTrace);
                 }
             };
         
@@ -82,18 +77,18 @@ namespace TweetsConsumer
             stream.StartStream();
         }
     
+        // storing only tweets with coordinates property
         private static bool StoreTweet(string text, float coordLong, float coordLat)
         {
             bool isSuccessful = false;
             using (SqlCommand command = new SqlCommand("InsertTweet", connection))
             {
                 try
-                    {
+                {
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.Add(new SqlParameter("@long", coordLong));
                     command.Parameters.Add(new SqlParameter("@lat", coordLat));
                     command.Parameters.Add(new SqlParameter("@content", text));
-
                     isSuccessful = command.ExecuteNonQuery() > 0;
                 }
                 catch (Exception ex)
@@ -101,7 +96,6 @@ namespace TweetsConsumer
                     Console.WriteLine(ex.Message);
                 }
             }
-            
             return isSuccessful;
         }
     }
