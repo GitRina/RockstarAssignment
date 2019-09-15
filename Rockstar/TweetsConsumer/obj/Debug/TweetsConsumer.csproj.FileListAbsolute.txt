@@ -1,0 +1,41 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\TweetsConsumer.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\TweetsConsumer.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\TweetsConsumer.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Autofac.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Nito.AsyncEx.Context.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\System.Net.Http.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\System.Reflection.TypeExtensions.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Controllers.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Core.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Credentials.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Factories.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Logic.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Security.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Streams.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.WebLogic.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Autofac.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Autofac.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Nito.AsyncEx.Context.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Controllers.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Core.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Credentials.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Factories.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Logic.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Security.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.Streams.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\bin\Debug\Tweetinvi.WebLogic.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\obj\Debug\TweetsConsumer.csproj.TweetsConsumer.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\obj\Debug\TweetsConsumer.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\obj\Debug\TweetsConsumer.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Rockstar\TweetsConsumer\obj\Debug\TweetsConsumer.csprojResolveAssemblyReference.cache
+D:\GitHub\Repos\Rockstar\TweetsConsumer\bin\Debug\TweetsConsumer.exe.config
+D:\GitHub\Repos\Rockstar\TweetsConsumer\obj\Debug\TweetsConsumer.exe
+D:\GitHub\Repos\Rockstar\TweetsConsumer\obj\Debug\TweetsConsumer.pdb
